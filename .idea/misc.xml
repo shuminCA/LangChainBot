@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkUUID" value="3b4f4947-4d29-42b0-b019-ffb747477723" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Pipenv (LangChainBot)" project-jdk-type="Python SDK" />
+</project>
