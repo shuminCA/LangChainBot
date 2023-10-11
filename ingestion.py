@@ -11,7 +11,6 @@ pinecone.init(
     environment=os.environ["PINECONE_ENVIRONMENT_REGION"],
 )
 
-
 def ingest_docs():
     loader = ReadTheDocsLoader(path="langchain-docs/api.python.langchain.com/en/latest")
     raw_documents = loader.load()
@@ -21,6 +20,7 @@ def ingest_docs():
     )
     documents = text_splitter.split_documents(documents=raw_documents)
     print(f"Splitted into {len(documents)} chucks")
+    print(documents[1])
 
     for doc in documents:
         old_path = doc.metadata["source"]
